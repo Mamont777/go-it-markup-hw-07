@@ -1,3 +1,23 @@
-body {
-  border-color: aqua;
-}
+// utils
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/common';
+@import './base/reset';
+@import './base/animation';
+@import './base/container';
+
+// Components
+@import './components/modal-form';
+
+// Layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/properties';
+@import './layouts/about';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio-btn';
+@import './layouts/projects';

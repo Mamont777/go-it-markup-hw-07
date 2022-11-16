@@ -1,0 +1,32 @@
+.properties-list {
+    display: flex;
+}
+
+.properties-list .item+.item {
+    margin-left: 30px;
+}
+
+.content {
+    width: 270px;
+    height: 120px;
+    background-color: var(--button-bc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.properties-title {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.properties-text {
+    margin-top: 10px;
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+}
