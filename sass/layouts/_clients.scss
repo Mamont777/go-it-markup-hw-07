@@ -1,16 +1,16 @@
-.clients {
+.clients__list {
   display: flex;
 
-  .clients-item + .clients-item {
+  .clients__item + .clients__item {
     margin-left: 30px;
   }
 
-  &-item {
+  .clients__item {
     width: 170px;
     height: 92px;
   }
 
-  &-link {
+  .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +28,6 @@
   }
 }
 
-.icon-client {
+.icon__client {
   fill: currentColor;
 }

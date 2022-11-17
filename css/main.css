@@ -38,9 +38,18 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section {
+section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
 }
 
 h1,
@@ -548,14 +557,14 @@ label {
           animation: bounce-top 0.9s both;
 }
 
-.properties-list {
+.properties__list {
   display: flex;
 }
-.properties-list .item + .item {
+.properties__list .properties__item + .properties__item {
   margin-left: 30px;
 }
 
-.content {
+.properties__content {
   width: 270px;
   height: 120px;
   background-color: var(--button-bc);
@@ -565,7 +574,7 @@ label {
   border-radius: 4px;
 }
 
-.properties-title {
+.properties__title {
   margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
@@ -574,35 +583,24 @@ label {
   color: var(--primary-text-color);
 }
 
-.properties-text {
+.properties__text {
   margin-top: 10px;
   line-height: 1.7;
   color: var(--secondary-text-color);
 }
 
-.section-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  color: var(--primary-text-color);
-}
-
-.image-list {
+.about__list {
   display: flex;
-  align-items: center;
 }
-
-.image-list .img-item + .img-item {
+.about__list .about__item + .about__item {
   margin-left: 30px;
 }
 
-.img-item {
+.about__item {
   position: relative;
 }
 
-.img-text {
+.about__text {
   position: absolute;
   bottom: 0;
   width: 370px;
@@ -617,37 +615,33 @@ label {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.our-team {
-  background-color: #f5f4fa;
-}
-
-.workers-list {
+.team__list {
   display: flex;
   height: 428px;
 }
-.workers-list .item-workers + .item-workers {
+.team__list .team__item + .team__item {
   margin-left: 30px;
 }
 
-.item-workers {
+.team__item {
   overflow: hidden;
   background-color: var(--tertiary-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.item-workers:hover .workers-img {
+.team__item:hover .team__img {
   transform: scale(1.2);
 }
 
-.workers-img {
+.team__img {
   transition: transform 1000ms ease;
 }
 
-.workers {
+.team__workers {
   padding: 30px 0;
 }
 
-.title-text {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -655,7 +649,7 @@ label {
   color: var(--primary-text-color);
 }
 
-.section-text {
+.team__text {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.2;
@@ -663,16 +657,16 @@ label {
   color: var(--secondary-text-color);
 }
 
-.social-list {
+.social__list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
-.social-list .social-item + .social-item {
+.social__list .social__item + .social__item {
   margin-left: 10px;
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -682,26 +676,26 @@ label {
   color: var(--icon-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-.social-link:hover, .social-link:focus {
+.social__link:hover, .social__link:focus {
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 
-.clients {
+.clients__list {
   display: flex;
 }
-.clients .clients-item + .clients-item {
+.clients__list .clients__item + .clients__item {
   margin-left: 30px;
 }
-.clients-item {
+.clients__list .clients__item {
   width: 170px;
   height: 92px;
 }
-.clients-link {
+.clients__list .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -712,11 +706,11 @@ label {
   border: 1px solid;
   transition: color 250ms var(--timing-function);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__list .clients__link:hover, .clients__list .clients__link:focus {
   color: var(--accent-color);
 }
 
-.icon-client {
+.icon__client {
   fill: currentColor;
 }
 
@@ -948,7 +942,7 @@ label {
   border: 1px solid #eeeeee;
 }
 
-.title {
+.cards-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
