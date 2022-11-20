@@ -8,6 +8,7 @@
     align-items: center;
   }
   &-link {
+    @include link;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -68,9 +69,9 @@
 }
 
 .nav-list {
+  @include list;
   display: flex;
   align-items: center;
-  list-style: none;
   margin-left: 93px;
   .item + .item {
     margin-left: 50px;
@@ -78,6 +79,7 @@
 }
 
 .site-list {
+  @include list;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -88,6 +90,7 @@
 }
 
 .link-mail-header {
+  @include link;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -109,6 +112,7 @@
 }
 
 .link-phone {
+  @include link;
   display: flex;
   align-items: center;
   font-weight: 500;

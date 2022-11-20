@@ -2,6 +2,7 @@
   padding-top: 0px;
 }
 .about__list {
+  @include list;
   display: flex;
 
   .about__item + .about__item {

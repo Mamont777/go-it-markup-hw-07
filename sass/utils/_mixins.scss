@@ -1,0 +1,9 @@
+@mixin list($ls: none, $pt: 0, $m: 0) {
+  list-style: $ls;
+  padding-left: $pt;
+  margin: $m;
+}
+
+@mixin link($td: none) {
+  text-decoration: none;
+}
